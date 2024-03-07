@@ -1,0 +1,43 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    padding: 10px;
+    border: 2px solid #c5c5c5;
+    background-color: brown;
+    color: #fff;
+}
+
+.text-style{
+    text-align: center;
+}
+/* 
+.container{
+    margin: 0 auto;
+    width: 50%;
+} */
+
+.descedant{
+  background-color: bisque;
+}
+div p{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.adjecent{
+    background-color: burlywood;
+}
+
+h2+p{
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+.child{
+    background-color: whitesmoke;
+}
+ul > li{
+    color: cadetblue;
+}

@@ -1,0 +1,126 @@
+.gridContainer {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "image price" "image purchase" "content purchase";
+
+}
+
+.gridItem {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.imageGrid {
+    grid-area: image;
+    max-width: 800px;
+}
+
+.priceGrid {
+    grid-area: price;
+    max-width: 500px;
+}
+
+.purchaseGrid {
+    grid-area: purchase;
+    max-width: 500px;
+}
+
+.contentGrid {
+    grid-area: content;
+    max-width: 500px;
+}
+
+.gridImageContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "image1 image1" "image2 image3" "image4 image5";
+    gap: 24px;
+}
+
+.firstImage {
+    grid-area: image1;
+    max-width: 800pc;
+}
+
+.secondImage {
+    grid-area: image2;
+}
+
+.thirdImage {
+    grid-area: image3;
+}
+
+.fourthImage {
+    grid-area: image4;
+}
+
+.lastImage {
+    grid-area: image5;
+}
+
+.squareImage {
+    background-color: rgba(0, 0, 255, 0.623);
+    color: white;
+}
+
+.squareImage:nth-child(2) {
+    background-color: cadetblue;
+}
+
+.squareImage:last-child {
+    background-color: rgb(5, 69, 45);
+}
+
+.link {
+    text-decoration: none;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: rgb(0, 34, 255)
+}
+
+a:active {
+    color: palegreen
+}
+
+.unOrderList li {
+    list-style: none;
+}
+
+.selectH1 h1:first-of-type {
+    color: rgb(0, 187, 255);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    transition: transform 0.3s ease;
+    /* Adding smooth transition */
+
+    /* Initial transform */
+    transform: scale(1);
+    /* Initial size */
+}
+
+.box:hover {
+    transform: scale(1.2) rotate(20deg);
+    /* Enlarges and rotates on hover */
+}
+
+@media screen and (max-width: 375px) {
+    .contentGrid {
+        display: none;
+    }
+
+    .squareImage {
+        background-color: rgba(137, 69, 26, 0.501);
+    }
+}
